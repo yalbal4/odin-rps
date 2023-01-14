@@ -27,3 +27,10 @@ function playRound(playerSelection, computerSelection) {
         if (computerSelection === 'Scissors') {return "Tie. Scissors ties Scissors"}
     }
 }
+
+function game() {
+    for (let round = 0; round < 5; round++) {
+        let playerSelection = prompt("Enter your rock-paper-scissors selection.")
+        console.log(playRound(playerSelection,getComputerChoice()))
+    }
+}
